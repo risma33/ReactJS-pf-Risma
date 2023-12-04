@@ -84,22 +84,19 @@
     text-align: end;
   }
   
-  .navBarStart
-    .navbarStart_conteiner
-    .basicNavbarNav
-    .ml_auto
-    .navbarStart_conteiner_collapse_ml_auto_link {
-        font-family: "Montserrat", sans-serif;
-        font-style: italic;
-        font-weight: 800;
-    color: #fff;
-  }
-  
-  .navBarStart
-    .navbarStart_conteiner
-    .basicNavbarNav
-    .ml_auto
-    .navbarStart_conteiner_collapse_ml_auto_link:hover {
-    color: #5c7a92;
-  }
+.ml_auto {
+  margin-left: auto !important;
+}
+
+.navBarStart .basicNavbarNav .navbarStart_conteiner_collapse_ml_auto_link {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  color: #fff;
+}
+
+.navBarStart .basicNavbarNav .navbarStart_conteiner_collapse_ml_auto_link:hover {
+  color: #5c7a92;
+}
+
   

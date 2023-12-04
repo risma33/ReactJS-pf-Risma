@@ -1,0 +1,51 @@
+.cardFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 0.1rem;
+    background-color: #6e99b3;
+    padding: 0.3rem 0.5rem;
+}
+
+.cardFotterButton {
+    margin: 0 1rem;
+    background-color: transparent;
+    border: none;
+    color: #ffff;
+}
+
+.cardFotterButton:hover {
+    color: #5c7a92;
+    cursor: pointer; 
+}
+
+.cardFotterButton:focus {
+    outline: none;
+}
+
+.cardFooter h6 {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: medium;
+    margin: 0;
+    text-align: center;
+    color: #ffff;
+}
+
+.addToCartButton {
+    grid-column: span 3;
+    color: #ffff;
+    background-color: transparent;
+    border: none;
+}
+
+.addToCartButton:hover {
+    color: #5c7a92;
+    cursor: pointer; 
+}
+
+.addToCartButton:focus {
+    outline: none;
+}
