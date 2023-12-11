@@ -1,0 +1,62 @@
+@keyframes swing {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    10% {
+      transform: rotate(10deg);
+    }
+  
+    30% {
+      transform: rotate(-10deg);
+    }
+  
+    50% {
+      transform: rotate(6deg);
+    }
+  
+    70% {
+      transform: rotate(-4deg);
+    }
+  
+    90% {
+      transform: rotate(2deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+.LogoConteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #ffff;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 1.7;
+    /* border-bottom: 2px solid #ffff; */
+}
+.LogoConteiner:hover {
+    animation: swing 1s ease-in-out;
+}
+
+
+.LogoConteiner .LogoConteiner_Gervi{
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin: 0;
+  }
+
+  .LogoConteiner .LogoConteiner_Store {
+    font-weight: bold;
+    font-size: 1.7em;
+    margin: 0;
+    
+  }
+

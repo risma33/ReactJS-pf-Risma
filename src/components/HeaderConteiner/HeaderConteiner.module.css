@@ -1,0 +1,13 @@
+.headerConteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to bottom, #95B7CB, #3E617C);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; 
+    height: 100vh; 
+}

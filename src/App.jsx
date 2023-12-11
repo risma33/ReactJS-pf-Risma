@@ -1,7 +1,7 @@
 
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from './components/Header/Header'
+
+import HeaderConteiner from './components/HeaderConteiner/HeaderConteiner'
 import BodyConteiner from './components/BodyConteiner/BodyConteiner'
 
 
@@ -9,8 +9,7 @@ function App() {
 
   return (
    <div>
-    
-    <Header/>
+    <HeaderConteiner/>
     <BodyConteiner text='in construction'/>
    </div>
   )

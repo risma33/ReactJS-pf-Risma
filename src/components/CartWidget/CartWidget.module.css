@@ -1,16 +1,19 @@
+
+
 .CartWidgetBadge {
-    background-color: transparent;
-    color: #fff; 
-    display: flex;
-    align-items: center;
-  }
-  
-  .CartWidgetBadge i {
-    margin-right: 5px; 
-  }
-  
-  .CartItemCount {
-    font-size: 14px; 
-    font-weight: bold;
-  }
-  
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #fff; 
+  background-color: #fff; 
+  padding: 5px 10px; 
+  border-radius: 10px; 
+}
+
+.CartIcon {
+  margin-right: 5px; 
+}
+
+.CartItemCount {
+  font-weight: bold;
+}

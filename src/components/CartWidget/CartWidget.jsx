@@ -1,13 +1,12 @@
 import classes from './CartWidget.module.css'
-import Badge from 'react-bootstrap/Badge';
-import Button from 'react-bootstrap/Button';
+
 
 const CartWidget = ({ itemCount }) => {
   return (
-    <Badge pill className={classes.CartWidgetBadge}>
-    <i className="fas fa-shopping-cart"></i>
-    <span className={classes.CartItemCount}>9</span>
-  </Badge>
+    <div className={classes.CartWidgetBadge}>
+      <i className={`fas fa-shopping-cart ${classes.CartIcon}`}></i>
+      <span className={classes.CartItemCount}>{itemCount}</span>
+    </div>
   );
 };
 
