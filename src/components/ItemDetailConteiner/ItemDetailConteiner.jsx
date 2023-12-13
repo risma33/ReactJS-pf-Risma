@@ -20,7 +20,7 @@ const ItemDetailConteiner = () => {
 
     return (
         <div className={classes.itemDetailContainer}>
-            { <ItemDetail key={product.id} {...product}/>}
+            { <ItemDetail {...product}/>}
         </div>
     )
 }

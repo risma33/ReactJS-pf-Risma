@@ -1,48 +1,75 @@
 .itemCountConteiner {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+    background-color: #f1f6f9;
+    border-radius: .75rem;
+    border: #d4d4d8;
+    width: 14rem;
+    height: auto;
+    padding: 1rem;
 }
 
-.itemCountConteiner .itemCountButton {
+.itemCountConteiner .itemCount {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2rem;
+    column-gap: 0.1rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    ;
+    
+
+    
+}
+
+.itemCountConteiner .itemCount .itemCountButton {
     background-color: #6f99b3;
-    border: none;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
     border-radius: 0.5rem;
-    height: 1rem;
-    width: 1rem;
+    height: 1.5rem;
+    width: 3rem;
     color: #ffff;
-}
-
-.cardFotterButton:hover {
-    color: #5c7a92;
-    cursor: pointer; 
-}
-
-.cardFotterButton:focus {
-    outline: none;
-}
-
-.cardFooter h6 {
     font-family: "Montserrat", sans-serif;
-    font-style: italic;
+    font-size: 1rem;
+    font-weight: 100;
+    
+}
+
+.itemCountConteiner .itemCount .itemCountButton:hover {
+    cursor: pointer;
+    background-color: #3e607a;
+}
+
+
+.itemCountConteiner .itemCount h6 {
+    font-family: "Montserrat", sans-serif;
+    
     font-weight: 800;
     font-size: medium;
     text-align: center;
+    color: #375067;
+}
+
+.itemCountConteiner div .itemCount_addToCartButton {
+    background-color: #6f99b3;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 100%;
     color: #ffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight:600;
+    color: #375067;
 }
 
-.addToCartButton {
-    grid-column: span 3;
-    color: #ffff;
-    background-color: transparent;
-    border: none;
+
+.itemCountConteiner div .itemCount_addToCartButton:hover{
+    cursor: pointer;
+    background-color: #3e607a;
 }
 
-.addToCartButton:hover {
-    color: #5c7a92;
-    cursor: pointer; 
-}
-
-.addToCartButton:focus {
-    outline: none;
-}

@@ -14,15 +14,21 @@ const ItemDetail = ({ id,
     images }) => {
         return (
             <div className={classes.itemDetailConteiner}>
-                <img className={classes.itemImg} src={thumbnail} alt={title} />
-                <div className={classes.itemDetail}>
-                    <h3>{title}</h3>
-                    <p>
-                         ${price} ({discountPercentage}% off)
-                    </p>
-                      
+                <div className={classes.itemDetail_img}>
+                   <img className={classes.itemImg} src={thumbnail} alt={title} /> 
                 </div>
-                <ItemCount/>
+                
+                <div className={classes.itemDetail_Title}>
+                    <h3>{title}</h3>
+                    <h2>{description}</h2>
+                </div>
+                <div className={classes.itemDetail_Price}>
+                    <div>
+                        ${price} ({discountPercentage}% off)
+                        <ItemCount/>
+                    </div>
+                </div>
+                
             </div>
         )
 }

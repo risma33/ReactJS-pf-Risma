@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './ItemCard.module.css'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ItemCard = ({ id,
     title,
@@ -13,8 +13,9 @@ const ItemCard = ({ id,
     category,
     thumbnail,
     images, }) => {
+        const navigate = useNavigate()
     return (
-        <div className={classes.productCard}>
+        <div className={classes.productCard} onClick={()=> navigate(`/detail/${id}`)}>
             <img className={classes.productThumbnail} src={thumbnail} alt={title} />
             <div className={classes.productDetails}>
                 <h3>{title}</h3>
@@ -26,8 +27,7 @@ const ItemCard = ({ id,
                         {discountPercentage}% OFF
                     </div>
                 </div>
-                <Link to={`/detail/${id}`} style={{ textDecoration: 'none' }}>ver detalle
-                </Link>
+            
             </div>
         </div>
 
