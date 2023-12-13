@@ -1,0 +1,39 @@
+
+
+.itemListConteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+
+div .itemList_title {
+    font-size: 4rem;  
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+      font-style: italic;
+      font-weight: 800;
+      background: linear-gradient(to right, #95b7cb, #3e617c);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-align: center;
+      transition: transform 0.5s, opacity 0.5s;
+  }
+
+div .itemList_showButton {
+  background-color: #477594;
+  padding:  0.75rem 1.5rem 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    width: 6rem;
+    height: 3rem;
+    align-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ffff;
+}

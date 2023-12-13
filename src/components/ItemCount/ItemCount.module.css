@@ -1,17 +1,15 @@
-.cardFooter {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    gap: 0.1rem;
-    background-color: #6e99b3;
-    padding: 0.3rem 0.5rem;
+.itemCountConteiner {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
 }
 
-.cardFotterButton {
-    margin: 0 1rem;
-    background-color: transparent;
+.itemCountConteiner .itemCountButton {
+    background-color: #6f99b3;
     border: none;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
     color: #ffff;
 }
 
@@ -29,7 +27,6 @@
     font-style: italic;
     font-weight: 800;
     font-size: medium;
-    margin: 0;
     text-align: center;
     color: #ffff;
 }

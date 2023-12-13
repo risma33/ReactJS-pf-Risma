@@ -1,19 +1,30 @@
 
 
-.CartWidgetBadge {
+.cartWidgetBadge {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  font-size: 16px;
-  color: #fff; 
-  background-color: #fff; 
-  padding: 5px 10px; 
-  border-radius: 10px; 
+  justify-content: center;
+  background-color: transparent;
+  border-top: 2px solid #ffff;
+  border-bottom: 2px solid #ffff;
+  width: 80%;
+  margin: 1rem 0rem 1rem 0rem;
+ padding: 1rem 0rem 1rem 0rem;
+  
+  
 }
 
-.CartIcon {
-  margin-right: 5px; 
+.cartIcon {
+  margin-right: 0.5rem; 
 }
 
-.CartItemCount {
-  font-weight: bold;
+.cartItemCount {
+  font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 1.7;
+    margin-left: 0.5rem;
+    color: #ffff;
 }

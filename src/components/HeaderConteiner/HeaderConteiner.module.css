@@ -1,13 +1,15 @@
 .headerConteiner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: top; 
     align-items: center;
     padding: 10px;
-    background: linear-gradient(to bottom, #95B7CB, #3E617C);
-    position: fixed;
+    background: linear-gradient(to bottom, #95b7cb, #3e617c);
     left: 0;
-    top: 0;
-    width: 200px; 
-    height: 100vh; 
+    bottom: 0;
+    width: 12rem; 
+    height: 100%; 
 }
+
+
+

@@ -1,0 +1,15 @@
+.appContainer {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    height: 100vh;
+}
+
+.appContainer .headerConteiner {
+    grid-column: 1; 
+    grid-row: span 2;
+    
+}
+
+.appContainer .bodyConteiner {
+    grid-column: 2; 
+}
