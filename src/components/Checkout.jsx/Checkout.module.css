@@ -1,0 +1,70 @@
+.orderLoading {
+    margin-left: 1rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    background-color: #f1f6f9;
+    height: 100%;
+    color: #2e3c4b;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 1000;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.correctOrderConteiner {
+    margin-left: 1rem;
+    margin-top: 0px;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    background-color: #f1f6f9;
+    height: 100%;
+    color: #2e3c4b;
+}
+
+.correctOrderConteiner .correctOrderTitle{
+   
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 1000;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.correctOrderConteiner .correctOrderTitle span {
+    font-size: 3rem;
+}
+
+.correctOrderConteiner .userData {
+    color: black;
+}
+
+.correctOrderConteiner .userData h3 {
+    margin: 0rem ;
+    padding-left: 2rem;
+}
+
+.checkoutConteiner {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    background-color: #f1f6f9;
+    height: 100%;
+    color: #2e3c4b;
+    font-family: "Montserrat", sans-serif;
+}
+
+.checkoutConteiner .checkoutTitle {
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 1000;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.checkoutConteiner .checkoutFormConteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}

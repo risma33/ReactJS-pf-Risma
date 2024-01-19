@@ -12,11 +12,11 @@ const ItemCard = ({ id,
     brand,
     category,
     thumbnail,
-    images, }) => {
+    img, }) => {
         const navigate = useNavigate()
     return (
         <div className={classes.productCard} onClick={()=> navigate(`/detail/${id}`)}>
-            <img className={classes.productThumbnail} src={thumbnail} alt={title} />
+            <img className={classes.productThumbnail} src={img} alt={title} />
             <div className={classes.productDetails}>
                 <h3>{title}</h3>
                 <div>

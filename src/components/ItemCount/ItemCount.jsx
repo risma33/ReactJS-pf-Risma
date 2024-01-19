@@ -2,11 +2,14 @@ import classes from './itemCount.module.css';
 import { useState } from 'react';
 
 
-const ItemCount = () => {
-    const [totalItem, setTotalItem] = useState(0)
+const ItemCount = ({ onAdd, stock, initial = 1 }) => {
+    const [totalItem, setTotalItem] = useState(initial)
 
     const handleIncrece = () => {
-        setTotalItem(prev => prev + 1)
+        if (totalItem < stock) {
+            setTotalItem(prev => prev + 1)
+        }
+        
     }
 
     const handleDecrece = () => {
@@ -14,6 +17,7 @@ const ItemCount = () => {
             setTotalItem(prev => prev - 1)
         }
     }
+
 
     return (
         <div className={classes.itemCountConteiner}>
@@ -23,7 +27,7 @@ const ItemCount = () => {
                 <button onClick={handleIncrece} className={classes.itemCountButton}>+</button>
             </div>
             <div>
-               <button className={classes.itemCount_addToCartButton}> Agregar al Carrito</button> 
+               <button className={classes.itemCount_addToCartButton} onClick={()=> onAdd(totalItem)} > Agregar al Carrito</button> 
             </div>
             
         </div>

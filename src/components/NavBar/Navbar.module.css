@@ -9,6 +9,11 @@
     text-align: center;
 }
 
+.navBarConteiner a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .navBarConteiner ul {
     list-style: none;
     padding: 0;

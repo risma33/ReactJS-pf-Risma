@@ -1,3 +1,18 @@
+.itemlistConteiner_loading{
+  font-size: 4rem;  
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+      font-style: italic;
+      font-weight: 800;
+      background: linear-gradient(to right, #95b7cb, #3e617c);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-align: center;
+      transition: transform 0.5s, opacity 0.5s;
+}
+
+
 
 
 .itemListConteiner {

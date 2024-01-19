@@ -1,0 +1,38 @@
+.success {
+background-color: #6f99b3;
+}
+
+.error {
+    background-color: red;
+}
+
+.info {
+    background-color: blue;
+}
+
+.warning {
+    background-color: orange;
+}
+
+.upRight {
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight:600;
+}
+
+.upLeft {position: absolute;
+    top: 100px;
+    left: 30px;
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight:600;
+}

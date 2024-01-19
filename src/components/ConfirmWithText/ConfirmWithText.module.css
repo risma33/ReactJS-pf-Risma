@@ -1,0 +1,60 @@
+.confirmWithTextConteriner {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f6f9;
+    border-radius: .75rem;
+    border: #d4d4d8;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+}
+
+.confirmWithTextConteriner .confirmWithTextTextShowing {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    text-align: center;
+    color: #375067;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.confirmWithTextConteriner .confirmWithTextButtonConteriner .confirmWithTextCancelButton {
+    background-color: #6f99b3;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    height: 1.5rem;
+    width: auto;
+    color: #ffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 0.5rem;
+    margin-top: 0rem;
+}
+
+.confirmWithTextConteriner .confirmWithTextButtonConteriner .confirmWithTextCancelButton:hover{
+    cursor: pointer;
+    background-color: #3e607a;
+}
+
+.confirmWithTextConteriner .confirmWithTextButtonConteriner .confirmWithTextConfirmButton {
+    background-color: #6f99b3;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    height: 1.5rem;
+    width: auto;
+    color: #ffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 0.5rem;
+    margin-top: 0rem;
+}
+
+.confirmWithTextConteriner .confirmWithTextButtonConteriner .confirmWithTextConfirmButton:hover{
+    cursor: pointer;
+    background-color: #3e607a;
+}

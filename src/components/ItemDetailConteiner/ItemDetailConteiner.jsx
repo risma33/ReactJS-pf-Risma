@@ -1,22 +1,33 @@
 import { useState, useEffect } from 'react'
 import classes from './ItemDetailConteiner.module.css'
 import ItemDetail from '../ItemDetail/ItemDetail'
-import { getProductById } from '../../asyncMock'
 import { useParams } from 'react-router-dom'
+import { getDoc, doc } from 'firebase/firestore'
+import { db } from "../../services/firebase/firebaseConfig"
+import { useNotification } from '../../notificaciones/NotificationService'
+
+
 
 const ItemDetailConteiner = () => {
     const [product, setProduct] = useState()
-    const params = useParams()
-    console.log(params);
+    const {productId} = useParams()
+    const { showNotification } = useNotification()
+
 
     useEffect(() => {
-        getProductById(params.productId)
-            .then(response => {
-                setProduct(response)
-            })
-    }, [params.productId]);
+        const documentRef = doc(db, 'products', productId)
+        getDoc(documentRef)
+        .then(queryDocumentSnapshot=>{
+            const fields = queryDocumentSnapshot.data()
+                const productAdapted = { id: queryDocumentSnapshot.id, ...fields}
+                setProduct(productAdapted)
 
-    console.log(product);
+        }).catch( () => {
+            showNotification('error', 'upRight', 'Hubo un error' )
+        })
+    }, [productId]);
+
+
 
     return (
         <div className={classes.itemDetailContainer}>
