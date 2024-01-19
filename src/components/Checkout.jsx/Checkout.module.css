@@ -49,9 +49,12 @@
     margin-left: 1rem;
     padding-left: 1rem;
     background-color: #f1f6f9;
-    height: 100%;
+    height: 100vh;
     color: #2e3c4b;
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .checkoutConteiner .checkoutTitle {
@@ -67,4 +70,39 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
+    margin: 4rem;
+    padding: 1rem;
+}
+
+.checkoutConteiner .checkoutFormConteiner input {
+    border-radius: 15px;
+    height: 2rem;
+    width: 15rem;
+    
+    border: 0 solid #2e3c4b;
+}
+
+.checkoutConteiner .checkoutFormConteiner input::placeholder {
+    padding: 0.5rem;
+}
+
+.checkoutConteiner .checkoutCreateOrderButton{
+    background-color: #6f99b3;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 10rem;
+    color: #ffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight:600;
+    margin-top: 2rem;
+    
+    
+}
+
+.checkoutConteiner .checkoutCreateOrderButton:hover{
+    cursor: pointer;
+    background-color: #3e607a;
 }

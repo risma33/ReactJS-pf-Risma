@@ -118,10 +118,11 @@ const Checkout = () => {
     return (
         <div className={classes.checkoutConteiner}>
             <h1 className={classes.checkoutTitle}>Datos de Envio</h1>
-            <div className={classes.checkoutFormConteiner}> <input type='text' placeholder='Nombre' onChange={handleChangeName} value={name} />
+            <div className={classes.checkoutFormConteiner}>
+                <input type='text' placeholder='Nombre' onChange={handleChangeName} value={name} />
                 <input type='email' placeholder='Correo Electrónico' onChange={handleChangeEmail} value={email} />
                 <input type='tel' placeholder='Teléfono' onChange={handleChangePhone} value={phone} />
-                <textarea placeholder='Dirección' onChange={handleChangeDireccion} value={direccion} /></div>
+                <input placeholder='Dirección' onChange={handleChangeDireccion} value={direccion} /></div>
             <button className={classes.checkoutCreateOrderButton} onClick={createOrder}>Generar Orden</button>
         </div>
     )

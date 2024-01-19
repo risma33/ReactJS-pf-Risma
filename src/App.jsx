@@ -7,6 +7,7 @@ import { CartProvider } from './context/CartContext';
 import CartView from './components/CartView/CartView';
 import { NotificationProvider } from './notificaciones/NotificationService';
 import Checkout from './components/Checkout.jsx/Checkout';
+import ProductToupdate from './components/ProductToUpdate/productsToUpdate';
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path='/detail/:productId' element={<ItemDetailConteiner />} />
             <Route path='/cart' element={<CartView />} />
             <Route path='/checkout' element={<Checkout />} />
+            <Route path='/productToUpdate' element={<ProductToupdate />} />
             <Route path='*' element={<h1>404 Not Found</h1>} />
           </Routes>
         </CartProvider>
